@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment">
     <fragment
@@ -23,9 +22,17 @@
             android:id="@+id/action_numberTheoryFragment_to_gcdFragment"
             app:destination="@id/gcdFragment"
             app:popUpTo="@id/numberTheoryFragment" />
+        <action
+            android:id="@+id/action_numberTheoryFragment_to_lcmFragment"
+            app:destination="@id/lcmFragment"
+            app:popUpTo="@id/numberTheoryFragment" />
     </fragment>
     <fragment
         android:id="@+id/gcdFragment"
         android:name="com.comseung.mymathcalculator.numbertheory.functions.GcdFragment"
         android:label="@string/gcd" />
+    <fragment
+        android:id="@+id/lcmFragment"
+        android:name="com.comseung.mymathcalculator.numbertheory.functions.LcmFragment"
+        android:label="@string/lcm" />
 </navigation>
