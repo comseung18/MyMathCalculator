@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyMathCalculator</string>
+    <string name="numbertheory">정수론</string>
+    <string name="gcd">최대공약수</string>
+    <string name="lcm">최소공배수</string>
+    <string name="result">결과값</string>
+    <string name="insert_some_value">값을 입력</string>
+    <string name="calculate">계산하기</string>
+    <string name="use_integer_desc">오류! 정수를 입력해주세요.</string>
+
+</resources>

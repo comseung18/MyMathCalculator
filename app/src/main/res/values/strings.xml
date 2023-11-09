@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyMathCalculator</string>
+    <string name="numbertheory">NumberTheory</string>
+    <string name="gcd">gcd</string>
+    <string name="lcm">lcm</string>
+    <string name="result">Result</string>
+    <string name="insert_some_value">Insert Some Value</string>
+    <string name="calculate">Calculate</string>
+    <string name="use_integer_desc">Wrong input! Please enter an integer.</string>
+</resources>
