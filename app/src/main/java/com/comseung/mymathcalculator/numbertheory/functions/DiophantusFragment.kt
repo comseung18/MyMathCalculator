@@ -1,6 +1,7 @@
 package com.comseung.mymathcalculator.numbertheory.functions
 
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.view.View
 import android.widget.Toast
 import com.comseung.mymathcalculator.BaseFragment
@@ -13,6 +14,11 @@ import kotlin.math.min
 class DiophantusFragment: BaseFragment<ThreeValueCalculatorLayoutBinding>(ThreeValueCalculatorLayoutBinding::inflate) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.resultDescription.apply {
+            movementMethod = ScrollingMovementMethod()
+        }
+
         binding.btnCalculate.setOnClickListener {
             val a = binding.value1.text.toString().toLongOrNull()
             val b = binding.value2.text.toString().toLongOrNull()
@@ -32,7 +38,8 @@ class DiophantusFragment: BaseFragment<ThreeValueCalculatorLayoutBinding>(ThreeV
             val ans = "x0: $x0, y0: $y0"
             val g = MathFunctions.gcd(a, b)
             val descBuilder = StringBuilder("($x0)*($a) + ($y0)*($b) = $c (valid?: ${a*x0 + b*y0 == c})\n")
-
+            descBuilder.append("generalization:\nx = $x0 + (${b/g})*t\ny = $y0 - (${a/g})*t\n")
+            descBuilder.append("-------------------------------------------\n")
             val lb = min(-x0*g/b, y0*g/a)
             val ub = max(-x0*g/b, y0*g/a)
 

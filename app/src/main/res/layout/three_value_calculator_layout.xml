@@ -46,6 +46,7 @@
         android:gravity="start|top"
         android:textSize="20sp"
         android:paddingHorizontal="10dp"
+        android:scrollbars="vertical"
         tools:text="Hello Nice to meet you how are you?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
