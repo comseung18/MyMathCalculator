@@ -8,4 +8,6 @@
     <string name="calculate">Calculate</string>
     <string name="use_integer_desc">Wrong input! Please enter an integer.</string>
     <string name="euclidGcd">euclidGcd</string>
+    <string name="diophantus">diophantus</string>
+    <string name="no_solution">No Solution</string>
 </resources>

@@ -23,7 +23,7 @@ class EuclidGcd: BaseFragment<TwoValueCaculatorLayoutBinding>(TwoValueCaculatorL
             val g = MathFunctions.gcd(a, b)
 
             val ans = "x: $x, y: $y gcd: $g"
-            binding.result.setText(ans)
+            binding.result.text = ans
             val desc = "($x)*($a) + ($y)*($b) = $g (valid?: ${a*x + b*y == g})"
             binding.resultDescription.text = desc
         }

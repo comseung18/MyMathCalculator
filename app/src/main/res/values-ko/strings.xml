@@ -9,5 +9,7 @@
     <string name="calculate">계산하기</string>
     <string name="use_integer_desc">오류! 정수를 입력해주세요.</string>
     <string name="euclidGcd">유클리드호제법</string>
+    <string name="diophantus">디오판투스</string>
+    <string name="no_solution">해가없음</string>
 
 </resources>

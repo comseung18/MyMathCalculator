@@ -19,6 +19,10 @@ fun getNumberTheoryItems(context: Context?): List<SimpleAdapterItem> {
             SimpleAdapterItem(
                 context.getString(R.string.euclidGcd),
                 NumberTheoryFragmentDirections.actionNumberTheoryFragmentToEuclidGcd()
+            ),
+            SimpleAdapterItem(
+                context.getString(R.string.diophantus),
+                NumberTheoryFragmentDirections.actionNumberTheoryFragmentToDiophantusFragment()
             )
         )
     } else {

@@ -22,4 +22,12 @@ object MathFunctions {
 
         return Pair(y, x-d*y)
     }
+
+    fun diophantus(a: Long, b: Long, c: Long): Pair<Long, Long>? {
+        val g = gcd(a, b)
+        if(g == 0L || c%g != 0L) return null
+
+        val( x, y) = euclidGcd(a, b)
+        return Pair(x*c/g, y*c/g)
+    }
 }
