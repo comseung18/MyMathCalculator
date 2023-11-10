@@ -8,5 +8,6 @@
     <string name="insert_some_value">값을 입력</string>
     <string name="calculate">계산하기</string>
     <string name="use_integer_desc">오류! 정수를 입력해주세요.</string>
+    <string name="euclidGcd">유클리드호제법</string>
 
 </resources>

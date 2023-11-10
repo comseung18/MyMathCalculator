@@ -15,6 +15,10 @@ fun getNumberTheoryItems(context: Context?): List<SimpleAdapterItem> {
             SimpleAdapterItem(
                 context.getString(R.string.lcm),
                 NumberTheoryFragmentDirections.actionNumberTheoryFragmentToLcmFragment()
+            ),
+            SimpleAdapterItem(
+                context.getString(R.string.euclidGcd),
+                NumberTheoryFragmentDirections.actionNumberTheoryFragmentToEuclidGcd()
             )
         )
     } else {

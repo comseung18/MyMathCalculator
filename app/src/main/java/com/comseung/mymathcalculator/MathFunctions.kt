@@ -13,4 +13,13 @@ object MathFunctions {
         val g = gcd(a, b)
         return abs(a/g*b)
     }
+
+    fun euclidGcd(a: Long, b: Long): Pair<Long, Long> {
+        if(b == 0L) return Pair(1L, 0L)
+        val(x, y)  = euclidGcd(b, a%b)
+
+        val d = a/b
+
+        return Pair(y, x-d*y)
+    }
 }

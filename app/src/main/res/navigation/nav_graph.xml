@@ -26,6 +26,10 @@
             android:id="@+id/action_numberTheoryFragment_to_lcmFragment"
             app:destination="@id/lcmFragment"
             app:popUpTo="@id/numberTheoryFragment" />
+        <action
+            android:id="@+id/action_numberTheoryFragment_to_euclidGcd"
+            app:destination="@id/euclidGcd"
+            app:popUpTo="@id/numberTheoryFragment" />
     </fragment>
     <fragment
         android:id="@+id/gcdFragment"
@@ -35,4 +39,8 @@
         android:id="@+id/lcmFragment"
         android:name="com.comseung.mymathcalculator.numbertheory.functions.LcmFragment"
         android:label="@string/lcm" />
+    <fragment
+        android:id="@+id/euclidGcd"
+        android:name="com.comseung.mymathcalculator.numbertheory.functions.EuclidGcd"
+        android:label="@string/euclidGcd" />
 </navigation>
