@@ -34,6 +34,10 @@
             android:id="@+id/action_numberTheoryFragment_to_diophantusFragment"
             app:destination="@id/diophantusFragment"
             app:popUpTo="@id/numberTheoryFragment" />
+        <action
+            android:id="@+id/action_numberTheoryFragment_to_isPrimeFragment"
+            app:destination="@id/isPrimeFragment"
+            app:popUpTo="@id/numberTheoryFragment" />
     </fragment>
     <fragment
         android:id="@+id/gcdFragment"
@@ -51,4 +55,8 @@
         android:id="@+id/diophantusFragment"
         android:name="com.comseung.mymathcalculator.numbertheory.functions.DiophantusFragment"
         android:label="@string/diophantus" />
+    <fragment
+        android:id="@+id/isPrimeFragment"
+        android:name="com.comseung.mymathcalculator.numbertheory.functions.IsPrimeFragment"
+        android:label="@string/is_prime" />
 </navigation>

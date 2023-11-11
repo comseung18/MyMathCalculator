@@ -23,6 +23,10 @@ fun getNumberTheoryItems(context: Context?): List<SimpleAdapterItem> {
             SimpleAdapterItem(
                 context.getString(R.string.diophantus),
                 NumberTheoryFragmentDirections.actionNumberTheoryFragmentToDiophantusFragment()
+            ),
+            SimpleAdapterItem(
+                context.getString(R.string.is_prime),
+                NumberTheoryFragmentDirections.actionNumberTheoryFragmentToIsPrimeFragment()
             )
         )
     } else {

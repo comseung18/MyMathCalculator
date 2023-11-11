@@ -11,5 +11,6 @@
     <string name="euclidGcd">유클리드호제법</string>
     <string name="diophantus">디오판투스</string>
     <string name="no_solution">해가없음</string>
+    <string name="is_prime">소수판별</string>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.comseung.mymathcalculator
 
 import kotlin.math.abs
+import kotlin.math.sqrt
 
 object MathFunctions {
 
@@ -29,5 +30,16 @@ object MathFunctions {
 
         val( x, y) = euclidGcd(a, b)
         return Pair(x*c/g, y*c/g)
+    }
+
+    fun isPrime(n: Long): Boolean {
+        if(n <= 1) return false
+        else if(n == 2L) return true
+
+        val sn = sqrt(n.toDouble()).toLong()
+        for(i in 2..sn) {
+            if(n%i == 0L) return false
+        }
+        return true
     }
 }
