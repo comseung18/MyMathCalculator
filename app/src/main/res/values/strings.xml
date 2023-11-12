@@ -11,4 +11,5 @@
     <string name="diophantus">diophantus</string>
     <string name="no_solution">No Solution</string>
     <string name="is_prime">IsPrime</string>
+    <string name="factorization">factorization</string>
 </resources>

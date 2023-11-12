@@ -38,6 +38,10 @@
             android:id="@+id/action_numberTheoryFragment_to_isPrimeFragment"
             app:destination="@id/isPrimeFragment"
             app:popUpTo="@id/numberTheoryFragment" />
+        <action
+            android:id="@+id/action_numberTheoryFragment_to_factorizationFragment"
+            app:destination="@id/factorizationFragment"
+            app:popUpTo="@id/numberTheoryFragment" />
     </fragment>
     <fragment
         android:id="@+id/gcdFragment"
@@ -59,4 +63,8 @@
         android:id="@+id/isPrimeFragment"
         android:name="com.comseung.mymathcalculator.numbertheory.functions.IsPrimeFragment"
         android:label="@string/is_prime" />
+    <fragment
+        android:id="@+id/factorizationFragment"
+        android:name="com.comseung.mymathcalculator.numbertheory.functions.FactorizationFragment"
+        android:label="@string/factorization" />
 </navigation>

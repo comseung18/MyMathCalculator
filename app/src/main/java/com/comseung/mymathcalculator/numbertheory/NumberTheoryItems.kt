@@ -27,6 +27,10 @@ fun getNumberTheoryItems(context: Context?): List<SimpleAdapterItem> {
             SimpleAdapterItem(
                 context.getString(R.string.is_prime),
                 NumberTheoryFragmentDirections.actionNumberTheoryFragmentToIsPrimeFragment()
+            ),
+            SimpleAdapterItem(
+                context.getString(R.string.factorization),
+                NumberTheoryFragmentDirections.actionNumberTheoryFragmentToFactorizationFragment()
             )
         )
     } else {

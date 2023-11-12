@@ -12,5 +12,6 @@
     <string name="diophantus">디오판투스</string>
     <string name="no_solution">해가없음</string>
     <string name="is_prime">소수판별</string>
+    <string name="factorization">소인수분해</string>
 
 </resources>
